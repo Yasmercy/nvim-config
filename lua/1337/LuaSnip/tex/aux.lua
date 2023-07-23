@@ -9,6 +9,14 @@ local d = ls.dynamic_node
 local fmt = require("luasnip.extras.fmt").fmt
 local fmta = require("luasnip.extras.fmt").fmta
 
+local get_visual = function(args, parent)
+  if (#parent.snippet.env.LS_SELECT_RAW > 0) then
+    return sn(nil, i(1, parent.snippet.env.LS_SELECT_RAW))
+  else  -- If LS_SELECT_RAW is empty, return a blank insert node
+    return sn(nil, i(1))
+  end
+end
+
 return {
     -- creating a document
     s(
@@ -28,6 +36,31 @@ return {
                 \end{document}
             ]],
             {i(1), i(2, "07-23-2003"), i(3)},
+            {delimiters="<>"}
+        )
+    ),
+    -- creating an environment
+    s(
+        {trig = ";env", triggerType = "autosnippet"},
+        fmt(
+            [[
+                \begin{<>}
+                    <>
+                \end{<>}
+            ]],
+            {i(1), i(2), rep(1)},
+            {delimiters="<>"}
+        )
+    ),
+    s(
+        {trig = "env"},
+        fmta(
+            [[
+                \begin{<>}
+                    <>
+                \end{<>}
+            ]],
+            {i(1), d(2, get_visual), rep(1)},
             {delimiters="<>"}
         )
     ),
