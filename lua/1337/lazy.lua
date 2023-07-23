@@ -13,9 +13,4 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup('1337.plugins')
-require'nvim-treesitter.configs'.setup {
-    -- Modules and its options go here
-    highlight = { enable = true },
-    incremental_selection = { enable = true },
-    textobjects = { enable = true },
-}
+

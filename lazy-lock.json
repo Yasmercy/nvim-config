@@ -1,5 +1,8 @@
 {
-  "lazy.nvim": { "branch": "main", "commit": "5af331ea65418dc9361769891921fdee4bcc837a" },
-  "rose-pine": { "branch": "main", "commit": "932adb0d9351186db047302de021bb2976756a07" },
-  "vimtex": { "branch": "master", "commit": "bab96ed04dd951b22663b08c670ff33960fc6419" }
+  "LuaSnip": { "branch": "master", "commit": "0b4950a237ce441a6a3a947d501622453f6860ea" },
+  "lazy.nvim": { "branch": "main", "commit": "3ad55ae678876516156cca2f361c51f7952a924b" },
+  "nvim-treesitter": { "branch": "master", "commit": "7b04e8b67eec7d92daadf9f0717dd272ddfc81a3" },
+  "nvim-treesitter-textobjects": { "branch": "master", "commit": "52f1f3280d9092bfaee5c45be5962fabee3d9654" },
+  "rose-pine": { "branch": "main", "commit": "e10340767534b4988992de838d6c811db63b74db" },
+  "vimtex": { "branch": "master", "commit": "53464eb5df497eb015da773f7a309e3bf2dfa16e" }
 }
