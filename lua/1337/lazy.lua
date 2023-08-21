@@ -8,9 +8,9 @@ if not vim.loop.fs_stat(lazypath) then
         "--branch=stable", -- latest stable release
         lazypath,
 
+
     })
 end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup('1337.plugins')
-
