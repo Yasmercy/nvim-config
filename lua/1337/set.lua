@@ -26,3 +26,4 @@ vim.opt.signcolumn = 'yes'
 vim.opt.cursorline = true
 
 vim.opt.swapfile = false
+
