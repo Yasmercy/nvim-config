@@ -1,6 +1,20 @@
 require("1337")
 
-vim.cmd [[ set clipboard+=unnamedplus ]]
-vim.cmd [[
-let g:clipboard = { 'name': 'WslClipboard', 'copy': { '+': 'clip.exe', '*': 'clip.exe', }, 'paste': { '+': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))', '*': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))', }, 'cache_enabled': 0, }
-]]
+vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
+    once = true,
+    callback = function()
+        vim.g.clipboard = {
+            copy = {
+                ["+"] = "win32yank.exe -i --crlf",
+                ["*"] = "win32yank.exe -i --crlf",
+            },
+            paste = {
+                ["+"] = "win32yank.exe -o --lf",
+                ["*"] = "win32yank.exe -o --lf",
+            },
+        }
+        vim.opt.clipboard = "unnamedplus"
+    end,
+
+    desc = "Lazy load clipboard",
+})
