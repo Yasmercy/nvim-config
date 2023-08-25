@@ -1,6 +1,8 @@
 vim.g.mapleader = ";"
 
-vim.cmd [[
-    nnoremap <nowait><leader>l :Lexplore <bar> 2windo NetrwC<cr> execute silent  wincmd w<cr>
-]]
+-- clear search highlights
+vim.keymap.set("n", "<leader>sc", "<cmd>nohl<CR>")
+
+-- enter netrw
+vim.keymap.set("n", "<leader>fe", "<cmd>Ex<CR>")
 

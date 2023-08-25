@@ -11,6 +11,7 @@ local fmt = require("luasnip.extras.fmt").fmt
 local fmta = require("luasnip.extras.fmt").fmta
 
 return {
+    -- simplified vector syntax
     s(
         {trig = "->"},
         fmt(
@@ -19,6 +20,42 @@ return {
             {i(1), i(2)},
             {delimiters = "<>"}
         )
+    ),
+
+    -- shorthands for unit vectors
+    s(
+        {trig = "ihat", snippetType="autosnippet"},
+        { t("\\hat{i}")}
+    ),
+    s(
+        {trig = "jhat", snippetType="autosnippet"},
+        { t("\\hat{j}")}
+    ),
+    s(
+        {trig = "khat", snippetType="autosnippet"},
+        { t("\\hat{j}")}
+    ),
+    -- uvec, vvec
+    s(
+        {trig = "uvec", snippetType="autosnippet"},
+        { t("\\hatoverrightarrow{u}")}
+    ),
+    s(
+        {trig = "vvec", snippetType="autosnippet"},
+        { t("\\hatoverrightarrow{v}")}
+    ),
+    -- n dimensional space
+    s(
+        {trig = ";R2", snippetType="autosnippet"},
+        {t("\\mathbb{R}^2")}
+    ),
+    s(
+        {trig = ";R3", snippetType="autosnippet"},
+        {t("\\mathbb{R}^3")}
+    ),
+    s(
+        {trig = ";Rn", snippetType="autosnippet"},
+        {t("\\mathbb{R}^n")}
     ),
 }
 
