@@ -55,4 +55,12 @@ return {
             {delimiters = "{}"}
         )
     ),
+    s(
+        {trig = ";pair", snippetType="autosnippet"},
+        fmt(
+            [[std::pair<{}, {}>{}]],
+            {i(1), i(2), i(3)},
+            {delimiters = "{}"}
+        )
+    ),
 }
