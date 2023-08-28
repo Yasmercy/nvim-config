@@ -38,12 +38,13 @@ return {
     -- uvec, vvec
     s(
         {trig = "uvec", snippetType="autosnippet"},
-        { t("\\hatoverrightarrow{u}")}
+        { t("\\vectorarrow{u}")}
     ),
     s(
         {trig = "vvec", snippetType="autosnippet"},
-        { t("\\hatoverrightarrow{v}")}
+        { t("\\vectorarrow{v}")}
     ),
+
     -- n dimensional space
     s(
         {trig = ";R2", snippetType="autosnippet"},
