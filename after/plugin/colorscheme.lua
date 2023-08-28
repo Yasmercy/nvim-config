@@ -1,1 +1,5 @@
-vim.cmd[[colorscheme tokyonight]]
+-- vim.cmd[[colorscheme tokyonight]]
+-- vim.cmd[[colorscheme jellybeans]]
+-- vim.cmd[[colorscheme gruvbox]]
+-- vim.cmd[[colorscheme lucid]]
+vim.cmd[[colorscheme materialbox]]

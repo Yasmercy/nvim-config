@@ -15,7 +15,7 @@ return {
     s(
         {trig = "->"},
         fmt(
-            [[\overrightarrow{<>}<>]],
+            [[\vectorarrow{<>}<>]],
 
             {i(1), i(2)},
             {delimiters = "<>"}
@@ -33,7 +33,7 @@ return {
     ),
     s(
         {trig = "khat", snippetType="autosnippet"},
-        { t("\\hat{j}")}
+        { t("\\hat{k}")}
     ),
     -- uvec, vvec
     s(
