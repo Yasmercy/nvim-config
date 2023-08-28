@@ -3,3 +3,7 @@
 -- vim.cmd[[colorscheme gruvbox]]
 -- vim.cmd[[colorscheme lucid]]
 vim.cmd[[colorscheme materialbox]]
+-- vim.cmd[[colorscheme catppuccin-frappe]]
+-- vim.cmd[[colorscheme catppuccin-latte]]
+-- vim.cmd[[colorscheme catppuccin-macchiato]]
+-- vim.cmd[[colorscheme catppuccin-mocha]]

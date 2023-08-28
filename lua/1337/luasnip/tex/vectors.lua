@@ -16,7 +16,6 @@ return {
         {trig = "->"},
         fmt(
             [[\vectorarrow{<>}<>]],
-
             {i(1), i(2)},
             {delimiters = "<>"}
         )
