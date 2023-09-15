@@ -13,15 +13,23 @@ local fmta = require("luasnip.extras.fmt").fmta
 return {
     -- shorthand for greek letters
     s(
-        {trig = ";a"},
+        {trig = ";a", snippetType="autosnippet"},
         {t("\\alpha")}
     ),
     s(
-        {trig = ";b"},
+        {trig = ";b", snippetType="autosnippet"},
         {t("\\beta")}
     ),
     s(
-        {trig = ";t"},
+        {trig = ";g", snippetType="autosnippet"},
+        {t("\\gamma")}
+    ),
+    s(
+        {trig = ";t", snippetType="autosnippet"},
+        {t("\\theta")}
+    ),
+    s(
+        {trig = ";t", snippetType="autosnippet"},
         {t("\\theta")}
     ),
 }

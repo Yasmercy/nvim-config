@@ -1,6 +1,7 @@
 {
   "LuaSnip": { "branch": "master", "commit": "0b4950a237ce441a6a3a947d501622453f6860ea" },
   "catppuccin": { "branch": "main", "commit": "2e3e5ebcdc24ef0d5b14a0a999dbbe7936512c46" },
+  "clangd_extensions.nvim": { "branch": "main", "commit": "bafed83f79b5779f5b43e8e015e13ca99dcd8b3a" },
   "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "44b16d11215dce86f253ce0c30949813c0a90765" },
   "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },
@@ -21,6 +22,7 @@
   "telescope.nvim": { "branch": "master", "commit": "776b509f80dd49d8205b9b0d94485568236d1192" },
   "tokyonight.nvim": { "branch": "main", "commit": "1ee11019f8a81dac989ae1db1a013e3d582e2033" },
   "vim-colors-lucid": { "branch": "master", "commit": "a2bc8f68f7c408bb8525e5f0e2405931e5bf240c" },
+  "vim-python-pep8-indent": { "branch": "master", "commit": "60ba5e11a61618c0344e2db190210145083c91f8" },
   "vimtex": { "branch": "master", "commit": "534fd725f2475a9083b032e402c7e73b8a3fc6bb" },
   "which-key.nvim": { "branch": "main", "commit": "7ccf476ebe0445a741b64e36c78a682c1c6118b7" }
 }
