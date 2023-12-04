@@ -52,6 +52,7 @@ rust_tools.setup({
 require("mason").setup()
 require("mason-lspconfig").setup()
 local lspconfig = require('lspconfig')
+lspconfig.kotlin_language_server.setup({ on_attach = attach})
 lspconfig.lua_ls.setup({ on_attach = attach })
 lspconfig.clangd.setup({
     on_attach = function(client, bufnr)
@@ -60,6 +61,7 @@ lspconfig.clangd.setup({
         require("clangd_extensions.inlay_hints").set_inlay_hints()
     end
 })
+
 
 require("clangd_extensions").setup({
     inlay_hints = {

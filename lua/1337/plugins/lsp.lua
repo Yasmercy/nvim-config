@@ -1,4 +1,4 @@
-return 
+return
 {
     {
         'neovim/nvim-lspconfig',
@@ -37,7 +37,6 @@ return
                 vim.keymap.set('i', '<c-k>', vim.lsp.buf.signature_help, { buffer = bufnr })
             end
 
-
             vim.diagnostic.config({
                 -- virtual_text = false,
             })
@@ -56,7 +55,6 @@ return
                     vim.keymap.set('n', 'K', '<cmd>RustHoverActions<cr>', { buffer = bufnr })
                     vim.keymap.set('n', 'gK', vim.lsp.buf.signature_help, { buffer = bufnr })
                     vim.keymap.set('i', '<c-k>', vim.lsp.buf.signature_help, { buffer = bufnr })
-
                 end
             })
         end,
