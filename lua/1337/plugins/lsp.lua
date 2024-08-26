@@ -37,11 +37,11 @@ return
                 vim.keymap.set('i', '<c-k>', vim.lsp.buf.signature_help, { buffer = bufnr })
             end
 
-            vim.diagnostic.config({
-                -- virtual_text = false,
+            local lspconfig = require('lspconfig')
+            lspconfig.cmp.setup({
+                on_attach = lsp_attach
             })
 
-            local lspconfig = require('lspconfig')
             lspconfig.rust_analyzer.setup({
                 on_attach = function(client, bufnr)
                     vim.keymap.set('n', '<leader>cd', vim.diagnostic.open_float, { buffer = bufnr })

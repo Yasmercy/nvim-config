@@ -1,4 +1,3 @@
-local rust_tools = require('rust-tools')
 function attach(client, bufnr)
     local bufopts = { buffer = bufnr, remap = false }
     vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
@@ -36,6 +35,7 @@ function attach(client, bufnr)
     vim.keymap.set('i', '<c-k>', vim.lsp.buf.signature_help, { buffer = bufnr })
 end
 
+local rust_tools = require('rust-tools')
 rust_tools.setup({
     tools = {
         reload_workspace_from_cargo_toml = true,
@@ -52,8 +52,11 @@ rust_tools.setup({
 require("mason").setup()
 require("mason-lspconfig").setup()
 local lspconfig = require('lspconfig')
-lspconfig.kotlin_language_server.setup({ on_attach = attach})
+lspconfig.texlab.setup({ on_attach = attach })
+lspconfig.kotlin_language_server.setup({ on_attach = attach })
 lspconfig.lua_ls.setup({ on_attach = attach })
+lspconfig.pyright.setup({ on_attach = attach })
+lspconfig.ltex.setup({ on_attach = attach })
 lspconfig.clangd.setup({
     on_attach = function(client, bufnr)
         attach(client, bufnr)
