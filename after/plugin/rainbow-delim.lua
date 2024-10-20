@@ -1,6 +1,8 @@
+-- This module contains a number of default definitions
 local rainbow_delimiters = require 'rainbow-delimiters'
 
-require('rainbow-delimiters.setup').setup {
+---@type rainbow_delimiters.config
+vim.g.rainbow_delimiters = {
     strategy = {
         [''] = rainbow_delimiters.strategy['global'],
         vim = rainbow_delimiters.strategy['local'],
@@ -12,11 +14,14 @@ require('rainbow-delimiters.setup').setup {
     priority = {
         [''] = 110,
         lua = 210,
-
     },
     highlight = {
-        "materialBoxYellowBold",
-        "materialBoxRedBold",
-        "materialBoxPurpleBold"
+        'RainbowDelimiterRed',
+        'RainbowDelimiterYellow',
+        'RainbowDelimiterBlue',
+        'RainbowDelimiterOrange',
+        'RainbowDelimiterGreen',
+        'RainbowDelimiterViolet',
+        'RainbowDelimiterCyan',
     },
 }

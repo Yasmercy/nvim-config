@@ -57,6 +57,13 @@ lspconfig.kotlin_language_server.setup({ on_attach = attach })
 lspconfig.lua_ls.setup({ on_attach = attach })
 lspconfig.pyright.setup({ on_attach = attach })
 lspconfig.ltex.setup({ on_attach = attach })
+lspconfig.verible.setup( {
+    on_attach = attach,
+    cmd = {
+        "verible-verilog-ls",
+        "--rules_config_search"
+    }
+})
 lspconfig.clangd.setup({
     on_attach = function(client, bufnr)
         attach(client, bufnr)

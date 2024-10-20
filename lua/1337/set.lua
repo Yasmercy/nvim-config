@@ -30,3 +30,5 @@ vim.opt.swapfile = false
 vim.opt.wrap = false
 
 vim.opt.background = 'light'
+
+vim.opt.guicursor = "n-v-c-i-sm:block"
