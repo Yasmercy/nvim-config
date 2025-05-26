@@ -1,4 +1,6 @@
 vim.g.mapleader = ";"
 
-vim.keymap.set('n', '<leader>sv', ':silent !pdflatex main.tex<cr>')
-vim.keymap.set('n', '<leader>za', ':silent !zathura main.pdf&<cr>')
+vim.keymap.set('n', '<leader>sv', '<Plug>(vimtex-compile-ss)')
+vim.keymap.set('n', '<leader>sc', '<Plug>(vimtex-compile)')
+vim.keymap.set('n', '<leader>vv', '<Plug>(vimtex-view)')
+vim.keymap.set('n', '<leader>cc', '<Plug>(vimtex-toggle-main)')

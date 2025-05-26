@@ -67,6 +67,10 @@ return
                 capabilities = lsp_capabilities,
                 on_attach = lsp_attach
             })
+            lspconfig.pyright.setup({
+                capabilities = lsp_capabilities,
+                on_attach = lsp_attach
+            })
         end,
     },
 }
